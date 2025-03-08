@@ -23,7 +23,7 @@ def get_recaptcha_token():
             url='https://www.eurobet.it/it/',
             invisible=0,
             enterprise=1,
-            action= "login",
+            action='login',
             version='v3',
             score=0.5,
         )
