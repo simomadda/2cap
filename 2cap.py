@@ -19,12 +19,13 @@ solver = TwoCaptcha(api_key)
 def get_recaptcha_token():
     try:
         result = solver.recaptcha(
-            sitekey='6Leioo4nAAAAAMcu1LhvJ0m2W3ccS-zSw3E4yUMz',
-            url='https://app.flouci.com/',
-            invisible=1,
+            sitekey='6LcYN-8ZAAAAADdQnz3xu1m1wGijz4osUK92RaN-',
+            url='https://www.eurobet.it/it/',
+            invisible=0,
             enterprise=1,
+            action= "login",
             version='v3',
-            score=0.9,
+            score=0.5,
         )
         return jsonify({'result': result})
     except Exception as e:
